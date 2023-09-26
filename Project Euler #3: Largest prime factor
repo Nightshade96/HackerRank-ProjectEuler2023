@@ -1,0 +1,27 @@
+#!/bin/python3
+
+import sys
+
+def prime_factors(n):
+    factors = []
+    divisor = 2
+
+    while divisor <= n:
+        if n % divisor == 0:
+            factors.append(divisor)
+            n //= divisor
+        else:
+            divisor += 1
+
+    return factors
+
+def checkHighestFactor(n):
+  factors = prime_factors(n)
+  return factors[-1]
+
+t = int(input().strip())
+for a0 in range(t):
+    n = int(input().strip())
+    print(checkHighestFactor(n))
+
+    
