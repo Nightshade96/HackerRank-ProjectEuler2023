@@ -28,6 +28,7 @@ For , if we list all the natural numbers below  that are multiples of  or , we g
 Similarly for , we get .
 
 Code
+FAILS TO PASS TESTCASE 2,3 
 #!/bin/python3
 
 import sys
@@ -46,3 +47,4 @@ for a0 in range(t):
     n = int(input().strip())
     print(multi(n))
     
+Other Code PASSES ALL TEST CASE
